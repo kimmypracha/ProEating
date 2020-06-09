@@ -1,5 +1,6 @@
 var express = require('./config/express');
 var app = express();
-app.listen(3000,function(){
-    console.log("App is running at port 8000");
+var port = 8000;
+app.listen(port,function(){
+    console.log("App is running at port "+ port);
 });
