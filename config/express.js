@@ -9,6 +9,7 @@ module.exports = function(){
     app.use(bodyParser.json());
     app.set('views','./app/views');
     app.set('view engine','pug');
+    require('../app/routes/home.server.routes')(app);
     app.use(express.static('public'));
     return app;
 }
