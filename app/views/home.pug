@@ -24,4 +24,11 @@ html
         li  Food Feed 
         li  Promotion &amp; News 
         li  Chef Ranking
-        li  Restaurant Ranking 
+        li  Restaurant Ranking
+    .post-list
+      each post in posts
+        .post-object
+          .createdBy 
+            =post.createdBy
+          .post-description
+            =post.description
