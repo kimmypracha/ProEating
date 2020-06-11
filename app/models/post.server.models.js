@@ -15,4 +15,6 @@ var PostSchema = new Schema({
         type: Number,
         default: 0
     }
-})
+});
+
+mongoose.model('post',PostSchema);
