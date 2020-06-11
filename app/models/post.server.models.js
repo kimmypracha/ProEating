@@ -17,4 +17,4 @@ var PostSchema = new Schema({
     }
 });
 
-mongoose.model('post',PostSchema);
+mongoose.model('post',PostSchema,'post');
