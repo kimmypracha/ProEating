@@ -10,5 +10,9 @@ var PostSchema = new Schema({
     },
     description : {
         type: String
+    },
+    liked_number: {
+        type: Number,
+        default: 0
     }
 })
