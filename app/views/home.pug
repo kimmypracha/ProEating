@@ -26,7 +26,19 @@ html
         li  Chef Ranking
         li  Restaurant Ranking
     .post-list
-      each post in posts
+      .post-object
+        .createdBy
+          |Anonymous
+        form(action="/createpost",method='post')
+          textarea(class='post-text', name="description", cols="50", rows="4")
+          label(class='btn-img',for="img-submit")
+            |Image Upload
+          // will add name='img' later, since img feature is not ready yet
+          input(type='file',id='img-submit')
+          input(type='hidden',name='createdBy',value='Anonymous')
+          input(class='btn-submit',type="submit")
+
+      each post in posts.reverse()
         .post-object
           .createdBy
             =post.createdBy

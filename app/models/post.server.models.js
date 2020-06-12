@@ -6,7 +6,8 @@ var PostSchema = new Schema({
         type: String
     },
     createdAt : {
-        type: Date
+        type: Date,
+        default: Date.now
     },
     description : {
         type: String

@@ -11,3 +11,15 @@ exports.render = function(req,res,next){
     }
     })
 }
+exports.createpost = function(req,res,next){
+    var newpost = new post(req.body);
+    newpost.save(function(err,post){
+        if(err){
+            next(err);
+        }else{
+            console.log(post);
+            //res.json(post);
+            res.redirect('/');
+        }
+    })
+}
