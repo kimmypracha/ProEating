@@ -26,6 +26,14 @@ var UserSchema = new Schema({
     salt: {
         type: String
     },
+    provider:{
+        type: String,
+        required: "Provider is required"
+    },
+    providerId:{
+        type: String
+    },
+    providerData:{},
     email: {
         type: String
     }
