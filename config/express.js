@@ -19,6 +19,7 @@ module.exports = function(){
     app.set('views','./app/views');
     app.set('view engine','pug');
     require('../app/routes/home.server.routes')(app);
+    require('../app/routes/user.server.routes')(app);
     app.use('/css',express.static('./public/css'));
     app.use(express.static('public'));
     return app;
