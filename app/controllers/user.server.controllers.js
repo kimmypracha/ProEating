@@ -1,6 +1,6 @@
 var usermodel = require('mongoose').model('user');
 exports.renderlogin = function(req,res,next){
-    res.render('login');
+    res.render('authen');
 }
 exports.signup = function(req,res,next){
     var user = new usermodel(req.body);
