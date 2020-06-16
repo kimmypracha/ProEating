@@ -9,7 +9,7 @@ module.exports = function(app){
                successRedirect: '/',
                failureRedirect: '/login',
                failureFlash: false
-           })(req,res);
+           })(req,res,next);
        });
     app.route('/signup')
        .post(user.signup);
