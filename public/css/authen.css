@@ -5,12 +5,15 @@ body{
 
 .authen-box{
     width: 300px;
-    height: 250px;
+    height: 260px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px #D9dddc;
 }
 
 .box-header{
@@ -19,21 +22,45 @@ body{
     font-size: 36px;
     text-align: center;
     border-bottom: 2px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 15px;
 }
 
 .box-form{
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 
 input[type='text'], input[type='password']{
+    display: block;
     background: none;
-    border: 1px solid black;
+    border: 2px solid #FFC857;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin: 10px auto;
     text-align: center;
     height: 25px;
-    width: 60%;
+    width: 80%;
+    transition: 0.25s;
 }
 
+input[type='text']:focus, input[type='password']:focus{
+    width: 85%;
+    border-color: darkorange;
+}
+input[type='submit']{
+    background: none;
+    display: block;
+    border: 2px solid #FFC857;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px auto;
+    transition: 0.25s;
+}
+
+input[type='submit']:hover{
+    background-color: #FFC857;
+    color: white;
+}
 
